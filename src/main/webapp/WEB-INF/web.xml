@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>NockWeb</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+
+	<!-- ControlServlet -->
+	<servlet>
+		<description></description>
+		<servlet-name>sogo.ControlServlet</servlet-name>
+		<servlet-class>sogo.ControlServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sogo.ControlServlet</servlet-name>
+		<url-pattern>/control</url-pattern>
+	</servlet-mapping>
+
+	<!-- MenuServlet -->
+	<servlet>
+		<description></description>
+		<servlet-name>sogo.MenuServlet</servlet-name>
+		<servlet-class>sogo.MenuServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sogo.MenuServlet</servlet-name>
+		<url-pattern>/menu</url-pattern>
+	</servlet-mapping>
+
+	<!-- ShohinServlet -->
+	<servlet>
+		<description></description>
+		<servlet-name>sogo.ShohinServlet</servlet-name>
+		<servlet-class>sogo.ShohinServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sogo.ShohinServlet</servlet-name>
+		<url-pattern>/shohin</url-pattern>
+	</servlet-mapping>
+	
+	<!-- ListControlServlet -->
+	<servlet>
+		<description></description>
+		<servlet-name>sogo.ListControlServlet</servlet-name>
+		<servlet-class>sogo.ListControlServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sogo.ListControlServlet</servlet-name>
+		<url-pattern>/list</url-pattern>
+	</servlet-mapping>
+	
+	<!-- DUControlServlet -->
+	<servlet>
+		<description></description>
+		<servlet-name>sogo.DUControlServlet</servlet-name>
+		<servlet-class>sogo.DUControlServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sogo.DUControlServlet</servlet-name>
+		<url-pattern>/duControl</url-pattern>
+	</servlet-mapping>
+</web-app>
